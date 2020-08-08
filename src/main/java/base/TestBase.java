@@ -17,7 +17,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("F:\\Selenium - Workspace\\PracticeSelenium\\src\\main\\java\\base\\config.properties");
+			FileInputStream ip = new FileInputStream("F:\\Selenium-Workspace\\CheckExecutionNew\\src\\main\\java\\base\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -31,7 +31,7 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "F:\\Selenium - Workspace\\PracticeSelenium\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "F:\\Selenium-Workspace\\CheckExecutionNew\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 			System.out.println("Swapnil");
 		}
